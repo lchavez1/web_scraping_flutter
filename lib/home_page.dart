@@ -9,7 +9,7 @@ class HomePage extends StatefulWidget{
 
   //Esta keyword sera la que se buscara en el sitio.
   final String keyword;
-  HomePage({this.keyword = 'nintendo'});
+  HomePage({this.keyword = 'electronico'});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -75,7 +75,7 @@ class _HomePageState extends State<HomePage> {
           final offer = offers[index];
           return OfferWidget(offer);
         },
-      )
+      ),
     );
   }
 }
